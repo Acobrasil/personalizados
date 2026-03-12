@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Produtos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .foto {
+      width: 100%;
+      height: 260px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 18px;
+    }
+
+    .info {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .info h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .preco {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-comprar {
+      background: #111;
+      color: white;
+    }
+
+    .btn-comprar:hover {
+      background: #333;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Minha Loja</h1>
+    <p>Escolha seu produto e compre agora</p>
+  </header>
+
+  <div class="container">
+    <div class="produtos">
+
+      <div class="card">
+        <div class="foto">Foto do Produto</div>
+        <div class="info">
+          <h2>Produto 1</h2>
+          <div class="preco">R$ 159,90</div>
+          <div class="botoes">
+            <a href="#" class="btn btn-comprar">Comprar</a>
+            <a href="https://wa.me/5541999999999?text=Ol%C3%A1,%20tenho%20interesse%20no%20Produto%201" class="btn btn-whatsapp" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="foto">Foto do Produto</div>
+        <div class="info">
+          <h2>Produto 2</h2>
+          <div class="preco">R$ 129,90</div>
+          <div class="botoes">
+            <a href="#" class="btn btn-comprar">Comprar</a>
+            <a href="https://wa.me/5541999999999?text=Ol%C3%A1,%20tenho%20interesse%20no%20Produto%202" class="btn btn-whatsapp" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="foto">Foto do Produto</div>
+        <div class="info">
+          <h2>Produto 3</h2>
+          <div class="preco">R$ 179,90</div>
+          <div class="botoes">
+            <a href="#" class="btn btn-comprar">Comprar</a>
+            <a href="https://wa.me/5541999999999?text=Ol%C3%A1,%20tenho%20interesse%20no%20Produto%203" class="btn btn-whatsapp" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="foto">Foto do Produto</div>
+        <div class="info">
+          <h2>Produto 4</h2>
+          <div class="preco">R$ 199,90</div>
+          <div class="botoes">
+            <a href="#" class="btn btn-comprar">Comprar</a>
+            <a href="https://wa.me/5541999999999?text=Ol%C3%A1,%20tenho%20interesse%20no%20Produto%204" class="btn btn-whatsapp" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 - Minha Loja. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
