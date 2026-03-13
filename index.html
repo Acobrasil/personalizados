@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joias Personalizadas</title>
+  <title>Aço Brasil Joias Personalizadas</title>
 
   <style>
     *{
@@ -45,7 +45,7 @@
       margin:0 auto 25px;
       font-size:17px;
       color:#ddd;
-      line-height:1.7;
+      line-height:1.8;
     }
 
     .categorias{
@@ -66,6 +66,7 @@
       font-weight:bold;
       font-size:15px;
       transition:0.2s;
+      display:inline-block;
     }
 
     .categoria-btn:hover{
@@ -100,10 +101,16 @@
       display:block;
     }
 
+    .produto-nome{
+      font-size:20px;
+      font-weight:bold;
+      margin:18px 10px 8px;
+    }
+
     .preco{
       font-size:24px;
       font-weight:bold;
-      margin:15px 0;
+      margin:10px 0 15px;
     }
 
     .botao{
@@ -114,6 +121,7 @@
       text-decoration:none;
       font-weight:bold;
       font-size:16px;
+      transition:0.2s;
     }
 
     .comprar{
@@ -121,9 +129,60 @@
       color:#fff;
     }
 
+    .comprar:hover{
+      background:#222;
+    }
+
     .whatsapp{
       background:#25D366;
       color:#fff;
+    }
+
+    .whatsapp:hover{
+      background:#1ebe5d;
+    }
+
+    footer{
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:50px 20px;
+      margin-top:60px;
+    }
+
+    .rastreio-btn{
+      display:inline-block;
+      background:#fff;
+      color:#000;
+      padding:16px 28px;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:bold;
+      text-decoration:none;
+      margin-bottom:30px;
+      transition:0.2s;
+    }
+
+    .rastreio-btn:hover{
+      background:#e5e5e5;
+    }
+
+    .empresa-info{
+      color:#ccc;
+      font-size:15px;
+      line-height:1.9;
+      margin-top:10px;
+    }
+
+    .empresa-info strong{
+      color:#fff;
+      font-size:16px;
+    }
+
+    .copyright{
+      margin-top:25px;
+      font-size:13px;
+      color:#888;
     }
 
     @media (max-width:768px){
@@ -139,22 +198,24 @@
         font-size:14px;
         padding:10px 14px;
       }
+
+      .card img{
+        height:260px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="logo.png" alt="Logo Aço Brasil" class="logo">
 
     <div class="headline">
       Escolha seu colar personalizado abaixo 👇
     </div>
 
     <div class="subheadline">
-      +7.000 pingentes fabricados ✨ &nbsp; / &nbsp;
-      Envios para todo Brasil via Correios 📦 &nbsp; / &nbsp;
-      Feito em apenas 15 minutos e despachados no mesmo dia 🚚
+      +7.000 pingentes fabricados ✨ / Envios para todo Brasil via Correios 📦 / Feito em apenas 15 minutos e despachados no mesmo dia 🚚
     </div>
 
     <div class="categorias">
@@ -172,38 +233,32 @@
     <div class="grid">
 
       <div class="card">
-        <img src="2.png" alt="Pingente">
+        <img src="2.png" alt="Pingente Personalizado">
+        <div class="produto-nome">Pingente Personalizado</div>
         <div class="preco">R$159</div>
         <a class="botao comprar" href="#">Comprar</a>
-        <a class="botao whatsapp" href="https://wa.me/5541999999999?text=Olá quero comprar este pingente" target="_blank">WhatsApp</a>
+        <a class="botao whatsapp" href="https://wa.me/5541999999999?text=Olá, quero comprar este pingente personalizado" target="_blank">WhatsApp</a>
       </div>
 
     </div>
   </div>
-<footer>
 
-<div class="rastreamento">
-<a href="https://rastreamento.correios.com.br/app/index.php" target="_blank">
-📦 Rastrear Encomenda
-</a>
-</div>
+  <footer>
+    <a class="rastreio-btn" href="https://rastreamento.correios.com.br/app/index.php" target="_blank">
+      📦 Rastrear Encomenda
+    </a>
 
-<div class="empresa">
+    <div class="empresa-info">
+      <p><strong>Aço Brasil Joias Personalizadas Ltda</strong></p>
+      <p>CNPJ: 53.087.030/0001-43</p>
+      <p>Av Presidente Kennedy 4121 Piso L1</p>
+      <p>Curitiba - Paraná</p>
+    </div>
 
-<p><strong>Aço Brasil Joias Personalizadas Ltda</strong></p>
+    <div class="copyright">
+      © 2026 Aço Brasil Joias Personalizadas — Todos os direitos reservados
+    </div>
+  </footer>
 
-<p>CNPJ: 53.087.030/0001-43</p>
-
-<p>Av Presidente Kennedy 4121 Piso L1</p>
-
-<p>Curitiba - Paraná</p>
-
-</div>
-
-<div class="copyright">
-© 2026 Aço Brasil Joias Personalizadas — Todos os direitos reservados
-</div>
-
-</footer>
 </body>
 </html>
